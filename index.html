@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script  type="javascript" src="scripts.js"></script>
   </head>
+
   <body>
+    <!-- VIDEO PLAYER -->
+
+  <div class="content">
+    <!-- <iframe width="760" height="515" src="https://www.youtube.com/embed/aZZCZpc0AcY" frameborder="0" allow="accelerometer; autoplay;
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <div class="youtubevideo">
+                    </div>
+              <input type="text" id="youtube" placeholder="Paste your YouTube link here"> </input>
+              <input type="submit" onclick="videoEmbed()"> </input>
+  </div>
+
+    <!-- BUTTONS -->
     <div class="toolbar">
       <button class="tool-items fa fa-bold"  onclick="document.execCommand('bold', false, '');"> </button>
       <button class="tool-items fa fa-underline"  onclick="document.execCommand('underline', false, '');"> </button>
@@ -20,10 +33,12 @@
       <button class="tool items fa fa-align-right" onclick="document.execCommand('justifyRight', false, '')"></button>
       </div>
 
+    <!-- TEXT AREA -->
       <div class="box">
-        <div class="maincontent" contenteditable>
-          
+        <div class="maincontent" contenteditable=true>
+              <p> Just delete this text and go crazy </p>
         </div>
       </div>
+
   </body>
 </html>

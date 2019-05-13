@@ -1,5 +1,4 @@
-p{
-  font-size: 30px;
+body {
 }
 
 .box{
@@ -9,18 +8,35 @@ p{
 }
 
 .maincontent{
-  width: 90%;
-  height: 60%;
+  font-size: 1.4em;
+  font-family: Georgia,Lora, serif;
+  line-height: 1.5em;
+  width: 50%;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px;
+  min-height: 20em;
 }
+
+.maincontent:focus{
+  outline: none;
+}
+
 
 .toolbar{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(50px, 50px));
   grid-gap: 1em;
   justify-content: center;
-  padding-top: 5em;
-  padding-bottom: 1em;
+  padding-top: 2em;
+  padding-bottom: 4em;
 
+}
+
+#youtube {
+  min-width: 15%;
+}
+
+.content{
+  text-align: center;
+  padding: 2em;
 }
